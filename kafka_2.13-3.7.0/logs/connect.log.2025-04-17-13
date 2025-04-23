@@ -1,0 +1,1 @@
+[2025-04-17 13:08:06,590] INFO [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)

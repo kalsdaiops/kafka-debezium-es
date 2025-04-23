@@ -1,0 +1,8 @@
+venv/
+*.pyc
+__pycache__/
+*.log
+*.tgz
+*.tar.gz
+.DS_Store
+

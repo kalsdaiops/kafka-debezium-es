@@ -1,0 +1,19 @@
+{
+  "name": "orders-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "database.hostname": "localhost",
+    "database.port": "5432",
+    "database.user": "postgres",
+    "database.password": "postgres",
+    "database.dbname": "postgres",
+    "database.server.name": "dbserver1",
+    "table.include.list": "public.orders",
+    "plugin.name": "pgoutput",
+    "slot.name": "debezium_slot",
+    "topic.prefix": "dbserver1",
+    "transforms": "unwrap",
+    "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
+    "transforms.unwrap.drop.tombstones": "true"
+  }
+}

@@ -1,0 +1,1384 @@
+[2025-04-17 14:11:30,689] ERROR Uncaught exception in REST call to /connectors (org.apache.kafka.connect.runtime.rest.errors.ConnectExceptionMapper:64)
+org.apache.kafka.connect.errors.ConnectException: Failed to find any class that implements Connector and which name matches io.confluent.connect.elasticsearch.ElasticsearchSinkConnector, available connectors are: PluginDesc{klass=class io.debezium.connector.postgresql.PostgresConnector, name='io.debezium.connector.postgresql.PostgresConnector', version='2.5.0.Final', encodedVersion=2.5.0.Final, type=source, typeName='source', location='file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/'}, PluginDesc{klass=class org.apache.kafka.connect.mirror.MirrorCheckpointConnector, name='org.apache.kafka.connect.mirror.MirrorCheckpointConnector', version='3.7.0', encodedVersion=3.7.0, type=source, typeName='source', location='classpath'}, PluginDesc{klass=class org.apache.kafka.connect.mirror.MirrorHeartbeatConnector, name='org.apache.kafka.connect.mirror.MirrorHeartbeatConnector', version='3.7.0', encodedVersion=3.7.0, type=source, typeName='source', location='classpath'}, PluginDesc{klass=class org.apache.kafka.connect.mirror.MirrorSourceConnector, name='org.apache.kafka.connect.mirror.MirrorSourceConnector', version='3.7.0', encodedVersion=3.7.0, type=source, typeName='source', location='classpath'}
+	at org.apache.kafka.connect.runtime.isolation.Plugins.connectorClass(Plugins.java:320)
+	at org.apache.kafka.connect.runtime.isolation.Plugins.newConnector(Plugins.java:291)
+	at org.apache.kafka.connect.runtime.AbstractHerder.lambda$getConnector$7(AbstractHerder.java:755)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+	at org.apache.kafka.connect.runtime.AbstractHerder.getConnector(AbstractHerder.java:755)
+	at org.apache.kafka.connect.runtime.AbstractHerder.validateConnectorConfig(AbstractHerder.java:500)
+	at org.apache.kafka.connect.runtime.AbstractHerder.lambda$validateConnectorConfig$3(AbstractHerder.java:412)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[2025-04-17 14:11:30,705] INFO [0:0:0:0:0:0:0:1] - - [17/Apr/2025:12:11:30 +0000] "POST /connectors HTTP/1.1" 500 1209 "-" "curl/8.7.1" 44 (org.apache.kafka.connect.runtime.rest.RestServer:62)
+[2025-04-17 14:15:10,399] INFO [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:10,502] INFO [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:10,504] WARN [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:10,617] INFO [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:10,618] WARN [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:10,854] INFO [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:10,854] WARN [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:11,351] INFO [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:11,352] WARN [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:12,202] INFO [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:12,202] WARN [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:13,205] INFO [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:13,206] WARN [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:14,208] INFO [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:14,208] WARN [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:15,211] INFO [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:15,211] WARN [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:16,100] INFO Kafka Connect stopping (org.apache.kafka.connect.runtime.Connect:67)
+[2025-04-17 14:15:16,102] INFO Stopping REST server (org.apache.kafka.connect.runtime.rest.RestServer:348)
+[2025-04-17 14:15:16,113] INFO Stopped http_8083@7bbd76b8{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:383)
+[2025-04-17 14:15:16,114] INFO node0 Stopped scavenging (org.eclipse.jetty.server.session:149)
+[2025-04-17 14:15:16,115] INFO Stopped o.e.j.s.ServletContextHandler@40dee07b{/,null,STOPPED} (org.eclipse.jetty.server.handler.ContextHandler:1159)
+[2025-04-17 14:15:16,116] INFO REST server stopped (org.apache.kafka.connect.runtime.rest.RestServer:377)
+[2025-04-17 14:15:16,116] INFO Herder stopping (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:115)
+[2025-04-17 14:15:16,117] INFO [orders-connector|task-0] Stopping task orders-connector-0 (org.apache.kafka.connect.runtime.Worker:1009)
+[2025-04-17 14:15:16,213] INFO [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:16,214] WARN [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Connection to node 0 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:16,342] INFO [orders-connector|task-0] Stopping down connector (io.debezium.connector.common.BaseSourceTask:282)
+[2025-04-17 14:15:16,601] INFO [orders-connector|task-0] Connection gracefully closed (io.debezium.jdbc.JdbcConnection:949)
+[2025-04-17 14:15:16,602] INFO [orders-connector|task-0] Connection gracefully closed (io.debezium.jdbc.JdbcConnection:949)
+[2025-04-17 14:15:16,603] INFO [orders-connector|task-0] Finished streaming (io.debezium.pipeline.ChangeEventSourceCoordinator:273)
+[2025-04-17 14:15:16,603] INFO [orders-connector|task-0] Connected metrics set to 'false' (io.debezium.pipeline.ChangeEventSourceCoordinator:425)
+[2025-04-17 14:15:16,605] INFO [orders-connector|task-0] SignalProcessor stopped (io.debezium.pipeline.signal.SignalProcessor:127)
+[2025-04-17 14:15:16,606] INFO [orders-connector|task-0] Debezium ServiceRegistry stopped. (io.debezium.service.DefaultServiceRegistry:105)
+[2025-04-17 14:15:16,608] INFO [orders-connector|task-0] Connection gracefully closed (io.debezium.jdbc.JdbcConnection:949)
+[2025-04-17 14:15:16,609] INFO [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Closing the Kafka producer with timeoutMillis = 30000 ms. (org.apache.kafka.clients.producer.KafkaProducer:1346)
+[2025-04-17 14:15:16,618] INFO [orders-connector|task-0] Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2025-04-17 14:15:16,618] INFO [orders-connector|task-0] Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2025-04-17 14:15:16,618] INFO [orders-connector|task-0] Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2025-04-17 14:15:16,618] INFO [orders-connector|task-0] Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2025-04-17 14:15:16,619] INFO [orders-connector|task-0] App info kafka.producer for connector-producer-orders-connector-0 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2025-04-17 14:15:16,624] INFO [orders-connector|worker] Stopping connector orders-connector (org.apache.kafka.connect.runtime.Worker:420)
+[2025-04-17 14:15:16,624] INFO [orders-connector|worker] Scheduled shutdown for WorkerConnector{id=orders-connector} (org.apache.kafka.connect.runtime.WorkerConnector:267)
+[2025-04-17 14:15:16,624] INFO [orders-connector|worker] Completed shutdown for WorkerConnector{id=orders-connector} (org.apache.kafka.connect.runtime.WorkerConnector:287)
+[2025-04-17 14:15:16,625] INFO Worker stopping (org.apache.kafka.connect.runtime.Worker:248)
+[2025-04-17 14:15:16,626] INFO Stopped FileOffsetBackingStore (org.apache.kafka.connect.storage.FileOffsetBackingStore:71)
+[2025-04-17 14:15:16,626] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2025-04-17 14:15:16,626] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2025-04-17 14:15:16,626] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2025-04-17 14:15:16,626] INFO App info kafka.connect for 172.20.10.10:8083 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2025-04-17 14:15:16,626] INFO Worker stopped (org.apache.kafka.connect.runtime.Worker:269)
+[2025-04-17 14:15:16,627] INFO Herder stopped (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:126)
+[2025-04-17 14:15:16,627] INFO Kafka Connect stopped (org.apache.kafka.connect.runtime.Connect:72)
+[2025-04-17 14:15:30,613] INFO Kafka Connect worker initializing ... (org.apache.kafka.connect.cli.AbstractConnectCli:114)
+[2025-04-17 14:15:30,615] INFO WorkerInfo values: 
+	jvm.args = -Xms256M, -Xmx2G, -XX:+UseG1GC, -XX:MaxGCPauseMillis=20, -XX:InitiatingHeapOccupancyPercent=35, -XX:+ExplicitGCInvokesConcurrent, -XX:MaxInlineLevel=15, -Djava.awt.headless=true, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -Dkafka.logs.dir=/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../logs, -Dlog4j.configuration=file:bin/../config/connect-log4j.properties
+	jvm.spec = Homebrew, OpenJDK 64-Bit Server VM, 11.0.26, 11.0.26+0
+	jvm.classpath = /Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/activation-1.1.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/aopalliance-repackaged-2.6.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/argparse4j-0.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/audience-annotations-0.12.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/caffeine-2.9.3.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/checker-qual-3.19.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/commons-beanutils-1.9.4.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/commons-cli-1.4.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/commons-collections-3.2.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/commons-digester-2.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/commons-io-2.11.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/commons-lang3-3.8.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/commons-logging-1.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/commons-validator-1.7.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/connect-api-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/connect-basic-auth-extension-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/connect-json-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/connect-mirror-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/connect-mirror-client-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/connect-runtime-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/connect-transforms-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/error_prone_annotations-2.10.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/hk2-api-2.6.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/hk2-locator-2.6.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/hk2-utils-2.6.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-annotations-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-core-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-databind-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-dataformat-csv-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-datatype-jdk8-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-jaxrs-base-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-jaxrs-json-provider-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-module-jaxb-annotations-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-module-scala_2.13-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jakarta.activation-api-1.2.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jakarta.annotation-api-1.3.5.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jakarta.inject-2.6.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jakarta.validation-api-2.0.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jakarta.xml.bind-api-2.3.3.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/javassist-3.29.2-GA.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/javax.activation-api-1.2.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/javax.annotation-api-1.3.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/javax.servlet-api-3.1.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/javax.ws.rs-api-2.1.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jaxb-api-2.3.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jersey-client-2.39.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jersey-common-2.39.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jersey-container-servlet-2.39.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jersey-container-servlet-core-2.39.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jersey-hk2-2.39.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jersey-server-2.39.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-client-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-continuation-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-http-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-io-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-security-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-server-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-servlet-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-servlets-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-util-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-util-ajax-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jline-3.22.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jopt-simple-5.0.4.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jose4j-0.9.4.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jsr305-3.0.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-clients-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-group-coordinator-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-log4j-appender-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-metadata-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-raft-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-server-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-server-common-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-shell-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-storage-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-storage-api-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-streams-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-streams-examples-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-streams-scala_2.13-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-streams-test-utils-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-tools-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-tools-api-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka_2.13-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/lz4-java-1.8.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/maven-artifact-3.8.8.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/metrics-core-2.2.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/metrics-core-4.1.12.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-buffer-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-codec-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-common-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-handler-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-resolver-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-transport-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-transport-classes-epoll-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-transport-native-epoll-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-transport-native-unix-common-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/opentelemetry-proto-1.0.0-alpha.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/osgi-resource-locator-1.0.3.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/paranamer-2.8.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/pcollections-4.0.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/plexus-utils-3.3.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/protobuf-java-3.23.4.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/reflections-0.10.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/reload4j-1.2.25.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/rocksdbjni-7.9.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/scala-collection-compat_2.13-2.10.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/scala-java8-compat_2.13-1.0.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/scala-library-2.13.12.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/scala-logging_2.13-3.9.4.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/scala-reflect-2.13.12.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/slf4j-api-1.7.36.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/slf4j-reload4j-1.7.36.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/snappy-java-1.1.10.5.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/swagger-annotations-2.2.8.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/trogdor-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/zookeeper-3.8.3.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/zookeeper-jute-3.8.3.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/zstd-jni-1.5.5-6.jar
+	os.spec = Mac OS X, aarch64, 15.3.2
+	os.vcpus = 8
+ (org.apache.kafka.connect.runtime.WorkerInfo:71)
+[2025-04-17 14:15:30,616] INFO Scanning for plugin classes. This might take a moment ... (org.apache.kafka.connect.cli.AbstractConnectCli:120)
+[2025-04-17 14:15:30,633] INFO Loading plugin from: /Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2025-04-17 14:15:30,726] INFO Registered loader: PluginClassLoader{pluginLocation=file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2025-04-17 14:15:30,729] INFO Loading plugin from: /Users/kaleab.teka/Documents/kafka-new/plugins/confluentinc-kafka-connect-elasticsearch-14.1.2 (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2025-04-17 14:15:30,891] INFO Registered loader: PluginClassLoader{pluginLocation=file:/Users/kaleab.teka/Documents/kafka-new/plugins/confluentinc-kafka-connect-elasticsearch-14.1.2/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2025-04-17 14:15:30,891] INFO Loading plugin from: classpath (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2025-04-17 14:15:30,895] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@16f65612 (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2025-04-17 14:15:30,895] INFO Scanning plugins with ServiceLoaderScanner took 262 ms (org.apache.kafka.connect.runtime.isolation.PluginScanner:70)
+[2025-04-17 14:15:30,896] INFO Loading plugin from: /Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2025-04-17 14:15:31,031] INFO Using up-to-date JsonConverter implementation (io.debezium.converters.CloudEventsConverter:118)
+[2025-04-17 14:15:31,043] INFO Registered loader: PluginClassLoader{pluginLocation=file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2025-04-17 14:15:31,043] INFO Loading plugin from: /Users/kaleab.teka/Documents/kafka-new/plugins/confluentinc-kafka-connect-elasticsearch-14.1.2 (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2025-04-17 14:15:31,382] INFO Registered loader: PluginClassLoader{pluginLocation=file:/Users/kaleab.teka/Documents/kafka-new/plugins/confluentinc-kafka-connect-elasticsearch-14.1.2/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2025-04-17 14:15:31,382] INFO Loading plugin from: classpath (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2025-04-17 14:15:31,676] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@16f65612 (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2025-04-17 14:15:31,676] INFO Scanning plugins with ReflectionScanner took 780 ms (org.apache.kafka.connect.runtime.isolation.PluginScanner:70)
+[2025-04-17 14:15:31,679] WARN One or more plugins are missing ServiceLoader manifests may not be usable with plugin.discovery=service_load: [
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/confluentinc-kafka-connect-elasticsearch-14.1.2/	io.confluent.connect.elasticsearch.ElasticsearchSinkConnector	sink	14.1.2
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.connector.postgresql.PostgresConnector	source	2.5.0.Final
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.connector.postgresql.transforms.timescaledb.TimescaleDb	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.converters.BinaryDataConverter	converter	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.converters.BinaryDataConverter	header_converter	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.converters.ByteArrayConverter	converter	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.converters.ByteArrayConverter	header_converter	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.converters.CloudEventsConverter	converter	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.ByLogicalTableRouter	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.ExtractChangedRecordState	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.ExtractNewRecordState	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.ExtractSchemaToNewRecord	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.HeaderToValue	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.SchemaChangeEventFilter	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.TimezoneConverter	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.outbox.EventRouter	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.partitions.PartitionRouting	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.tracing.ActivateTracingSpan	transformation	undefined
+]
+Read the documentation at https://kafka.apache.org/documentation.html#connect_plugindiscovery for instructions on migrating your plugins to take advantage of the performance improvements of service_load mode. To silence this warning, set plugin.discovery=only_scan in the worker config. (org.apache.kafka.connect.runtime.isolation.Plugins:122)
+[2025-04-17 14:15:31,679] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,679] INFO Added plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'io.debezium.connector.postgresql.transforms.timescaledb.TimescaleDb' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'io.debezium.transforms.ExtractNewRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'io.debezium.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'io.debezium.transforms.partitions.PartitionRouting' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'io.debezium.transforms.outbox.EventRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,680] INFO Added plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'io.confluent.connect.elasticsearch.ElasticsearchSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'io.debezium.connector.postgresql.rest.DebeziumPostgresConnectRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'io.debezium.transforms.HeaderToValue' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'io.debezium.transforms.SchemaChangeEventFilter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'io.debezium.transforms.ExtractSchemaToNewRecord' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'io.debezium.transforms.ByLogicalTableRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'io.debezium.transforms.TimezoneConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'io.debezium.transforms.ExtractChangedRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'io.debezium.transforms.tracing.ActivateTracingSpan' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'io.debezium.connector.postgresql.PostgresConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,681] INFO Added plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,682] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,682] INFO Added plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:15:31,682] INFO Added alias 'RecordIsTombstone' to plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,682] INFO Added alias 'CloudEventsConverter' to plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,682] INFO Added alias 'ElasticsearchSinkConnector' to plugin 'io.confluent.connect.elasticsearch.ElasticsearchSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,682] INFO Added alias 'String' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,682] INFO Added alias 'EnvVar' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,682] INFO Added alias 'EnvVarConfigProvider' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,682] INFO Added alias 'MirrorCheckpointConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,682] INFO Added alias 'Boolean' to plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,682] INFO Added alias 'HeaderToValue' to plugin 'io.debezium.transforms.HeaderToValue' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,682] INFO Added alias 'PartitionRouting' to plugin 'io.debezium.transforms.partitions.PartitionRouting' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'Json' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'StringConverter' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'IntegerConverter' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'Float' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'LongConverter' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'DropHeaders' to plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'SimpleHeaderConverter' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'ExtractSchemaToNewRecord' to plugin 'io.debezium.transforms.ExtractSchemaToNewRecord' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'BinaryData' to plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'DirectoryConfigProvider' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'ShortConverter' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'CloudEvents' to plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'TimezoneConverter' to plugin 'io.debezium.transforms.TimezoneConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'BasicAuthSecurityRestExtension' to plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'Simple' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'DebeziumPostgres' to plugin 'io.debezium.connector.postgresql.rest.DebeziumPostgresConnectRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'AllConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'ExtractNewRecordState' to plugin 'io.debezium.transforms.ExtractNewRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'MirrorSource' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'Directory' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'MirrorHeartbeat' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'BooleanConverter' to plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'HasHeaderKey' to plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'MirrorCheckpoint' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'ExtractChangedRecordState' to plugin 'io.debezium.transforms.ExtractChangedRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'None' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'TimestampRouter' to plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'Principal' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'All' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'JsonConverter' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'DebeziumPostgresConnectRestExtension' to plugin 'io.debezium.connector.postgresql.rest.DebeziumPostgresConnectRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'RegexRouter' to plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'Postgres' to plugin 'io.debezium.connector.postgresql.PostgresConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'NoneConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'Short' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'ByLogicalTableRouter' to plugin 'io.debezium.transforms.ByLogicalTableRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'Double' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,683] INFO Added alias 'FileConfigProvider' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'EventRouter' to plugin 'io.debezium.transforms.outbox.EventRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'SchemaChangeEventFilter' to plugin 'io.debezium.transforms.SchemaChangeEventFilter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'Long' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'ElasticsearchSink' to plugin 'io.confluent.connect.elasticsearch.ElasticsearchSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'File' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'FloatConverter' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'ActivateTracingSpan' to plugin 'io.debezium.transforms.tracing.ActivateTracingSpan' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'DoubleConverter' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'BinaryDataConverter' to plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'TimescaleDb' to plugin 'io.debezium.connector.postgresql.transforms.timescaledb.TimescaleDb' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'TopicNameMatches' to plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'MirrorHeartbeatConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'InsertHeader' to plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'MirrorSourceConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'PrincipalConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'PostgresConnector' to plugin 'io.debezium.connector.postgresql.PostgresConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'ValueToKey' to plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'Integer' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,684] INFO Added alias 'Filter' to plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:15:31,687] INFO StandaloneConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	config.providers = []
+	connector.client.config.override.policy = All
+	header.converter = class org.apache.kafka.connect.storage.SimpleHeaderConverter
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	listeners = [http://:8083]
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	offset.flush.interval.ms = 10000
+	offset.flush.timeout.ms = 5000
+	offset.storage.file.filename = /tmp/connect.offsets
+	plugin.discovery = hybrid_warn
+	plugin.path = [/Users/kaleab.teka/Documents/kafka-new/plugins]
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	task.shutdown.graceful.timeout.ms = 5000
+	topic.creation.enable = true
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.standalone.StandaloneConfig:370)
+[2025-04-17 14:15:31,688] INFO Creating Kafka admin client (org.apache.kafka.connect.runtime.WorkerConfig:283)
+[2025-04-17 14:15:31,689] INFO AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:370)
+[2025-04-17 14:15:31,714] INFO These configurations '[offset.flush.interval.ms, rest.port, key.converter.schemas.enable, offset.storage.file.filename, value.converter.schemas.enable, plugin.path, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:379)
+[2025-04-17 14:15:31,714] INFO Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2025-04-17 14:15:31,714] INFO Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2025-04-17 14:15:31,714] INFO Kafka startTimeMs: 1744892131714 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2025-04-17 14:15:31,724] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:31,725] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:31,828] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:31,828] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:32,032] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:32,032] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:32,237] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:32,237] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:32,645] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:32,646] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:33,458] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:33,459] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:34,473] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:34,473] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:35,386] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:35,386] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:36,400] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:36,401] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:37,313] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:37,314] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:38,227] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:38,228] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:39,244] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:39,244] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:40,158] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:40,159] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:41,174] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:41,175] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:42,186] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:42,186] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:43,197] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:43,198] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:44,212] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:44,213] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:45,228] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:45,229] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:46,244] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:46,245] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:47,259] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:47,259] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:48,171] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:48,172] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:49,085] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:49,085] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:49,999] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:49,999] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:51,014] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:51,014] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:51,926] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:51,926] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:52,938] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:52,938] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:53,952] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:53,953] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:54,966] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:54,967] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:55,981] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:55,981] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:56,995] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:56,996] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:58,009] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:58,009] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:58,922] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:58,923] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:15:59,834] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:15:59,834] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:00,849] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:16:00,850] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:01,718] INFO [AdminClient clientId=adminclient-1] Metadata update failed (org.apache.kafka.clients.admin.internals.AdminMetadataManager:267)
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment. Call: fetchMetadata
+[2025-04-17 14:16:01,925] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:16:01,925] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:02,939] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:16:02,939] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:03,954] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:16:03,954] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:04,967] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:16:04,968] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:05,981] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:16:05,981] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:06,997] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:16:06,997] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:08,012] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:16:08,013] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:09,025] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:16:09,025] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:10,038] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:16:10,039] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:10,951] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:16:10,951] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:11,964] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:16:11,965] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:12,877] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:16:12,877] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:13,892] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:16:13,892] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:14,804] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:16:14,805] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:15,820] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:16:15,821] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:16,835] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2025-04-17 14:16:16,835] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2025-04-17 14:16:54,909] INFO Kafka Connect worker initializing ... (org.apache.kafka.connect.cli.AbstractConnectCli:114)
+[2025-04-17 14:16:54,911] INFO WorkerInfo values: 
+	jvm.args = -Xms256M, -Xmx2G, -XX:+UseG1GC, -XX:MaxGCPauseMillis=20, -XX:InitiatingHeapOccupancyPercent=35, -XX:+ExplicitGCInvokesConcurrent, -XX:MaxInlineLevel=15, -Djava.awt.headless=true, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -Dkafka.logs.dir=/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../logs, -Dlog4j.configuration=file:bin/../config/connect-log4j.properties
+	jvm.spec = Homebrew, OpenJDK 64-Bit Server VM, 11.0.26, 11.0.26+0
+	jvm.classpath = /Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/activation-1.1.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/aopalliance-repackaged-2.6.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/argparse4j-0.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/audience-annotations-0.12.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/caffeine-2.9.3.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/checker-qual-3.19.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/commons-beanutils-1.9.4.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/commons-cli-1.4.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/commons-collections-3.2.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/commons-digester-2.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/commons-io-2.11.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/commons-lang3-3.8.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/commons-logging-1.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/commons-validator-1.7.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/connect-api-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/connect-basic-auth-extension-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/connect-json-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/connect-mirror-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/connect-mirror-client-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/connect-runtime-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/connect-transforms-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/error_prone_annotations-2.10.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/hk2-api-2.6.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/hk2-locator-2.6.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/hk2-utils-2.6.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-annotations-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-core-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-databind-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-dataformat-csv-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-datatype-jdk8-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-jaxrs-base-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-jaxrs-json-provider-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-module-jaxb-annotations-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jackson-module-scala_2.13-2.16.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jakarta.activation-api-1.2.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jakarta.annotation-api-1.3.5.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jakarta.inject-2.6.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jakarta.validation-api-2.0.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jakarta.xml.bind-api-2.3.3.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/javassist-3.29.2-GA.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/javax.activation-api-1.2.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/javax.annotation-api-1.3.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/javax.servlet-api-3.1.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/javax.ws.rs-api-2.1.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jaxb-api-2.3.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jersey-client-2.39.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jersey-common-2.39.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jersey-container-servlet-2.39.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jersey-container-servlet-core-2.39.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jersey-hk2-2.39.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jersey-server-2.39.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-client-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-continuation-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-http-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-io-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-security-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-server-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-servlet-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-servlets-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-util-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jetty-util-ajax-9.4.53.v20231009.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jline-3.22.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jopt-simple-5.0.4.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jose4j-0.9.4.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/jsr305-3.0.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-clients-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-group-coordinator-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-log4j-appender-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-metadata-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-raft-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-server-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-server-common-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-shell-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-storage-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-storage-api-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-streams-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-streams-examples-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-streams-scala_2.13-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-streams-test-utils-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-tools-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka-tools-api-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/kafka_2.13-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/lz4-java-1.8.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/maven-artifact-3.8.8.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/metrics-core-2.2.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/metrics-core-4.1.12.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-buffer-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-codec-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-common-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-handler-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-resolver-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-transport-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-transport-classes-epoll-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-transport-native-epoll-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/netty-transport-native-unix-common-4.1.100.Final.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/opentelemetry-proto-1.0.0-alpha.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/osgi-resource-locator-1.0.3.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/paranamer-2.8.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/pcollections-4.0.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/plexus-utils-3.3.1.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/protobuf-java-3.23.4.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/reflections-0.10.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/reload4j-1.2.25.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/rocksdbjni-7.9.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/scala-collection-compat_2.13-2.10.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/scala-java8-compat_2.13-1.0.2.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/scala-library-2.13.12.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/scala-logging_2.13-3.9.4.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/scala-reflect-2.13.12.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/slf4j-api-1.7.36.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/slf4j-reload4j-1.7.36.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/snappy-java-1.1.10.5.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/swagger-annotations-2.2.8.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/trogdor-3.7.0.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/zookeeper-3.8.3.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/zookeeper-jute-3.8.3.jar:/Users/kaleab.teka/Documents/kafka-new/kafka_2.13-3.7.0/bin/../libs/zstd-jni-1.5.5-6.jar
+	os.spec = Mac OS X, aarch64, 15.3.2
+	os.vcpus = 8
+ (org.apache.kafka.connect.runtime.WorkerInfo:71)
+[2025-04-17 14:16:54,912] INFO Scanning for plugin classes. This might take a moment ... (org.apache.kafka.connect.cli.AbstractConnectCli:120)
+[2025-04-17 14:16:54,928] INFO Loading plugin from: /Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2025-04-17 14:16:55,021] INFO Registered loader: PluginClassLoader{pluginLocation=file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2025-04-17 14:16:55,023] INFO Loading plugin from: /Users/kaleab.teka/Documents/kafka-new/plugins/confluentinc-kafka-connect-elasticsearch-14.1.2 (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2025-04-17 14:16:55,156] INFO Registered loader: PluginClassLoader{pluginLocation=file:/Users/kaleab.teka/Documents/kafka-new/plugins/confluentinc-kafka-connect-elasticsearch-14.1.2/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2025-04-17 14:16:55,157] INFO Loading plugin from: classpath (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2025-04-17 14:16:55,160] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@16f65612 (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2025-04-17 14:16:55,160] INFO Scanning plugins with ServiceLoaderScanner took 233 ms (org.apache.kafka.connect.runtime.isolation.PluginScanner:70)
+[2025-04-17 14:16:55,161] INFO Loading plugin from: /Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2025-04-17 14:16:55,282] INFO Using up-to-date JsonConverter implementation (io.debezium.converters.CloudEventsConverter:118)
+[2025-04-17 14:16:55,293] INFO Registered loader: PluginClassLoader{pluginLocation=file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2025-04-17 14:16:55,293] INFO Loading plugin from: /Users/kaleab.teka/Documents/kafka-new/plugins/confluentinc-kafka-connect-elasticsearch-14.1.2 (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2025-04-17 14:16:55,635] INFO Registered loader: PluginClassLoader{pluginLocation=file:/Users/kaleab.teka/Documents/kafka-new/plugins/confluentinc-kafka-connect-elasticsearch-14.1.2/} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2025-04-17 14:16:55,635] INFO Loading plugin from: classpath (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2025-04-17 14:16:55,967] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@16f65612 (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2025-04-17 14:16:55,967] INFO Scanning plugins with ReflectionScanner took 806 ms (org.apache.kafka.connect.runtime.isolation.PluginScanner:70)
+[2025-04-17 14:16:55,969] WARN One or more plugins are missing ServiceLoader manifests may not be usable with plugin.discovery=service_load: [
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/confluentinc-kafka-connect-elasticsearch-14.1.2/	io.confluent.connect.elasticsearch.ElasticsearchSinkConnector	sink	14.1.2
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.connector.postgresql.PostgresConnector	source	2.5.0.Final
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.connector.postgresql.transforms.timescaledb.TimescaleDb	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.converters.BinaryDataConverter	converter	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.converters.BinaryDataConverter	header_converter	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.converters.ByteArrayConverter	converter	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.converters.ByteArrayConverter	header_converter	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.converters.CloudEventsConverter	converter	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.ByLogicalTableRouter	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.ExtractChangedRecordState	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.ExtractNewRecordState	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.ExtractSchemaToNewRecord	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.HeaderToValue	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.SchemaChangeEventFilter	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.TimezoneConverter	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.outbox.EventRouter	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.partitions.PartitionRouting	transformation	undefined
+file:/Users/kaleab.teka/Documents/kafka-new/plugins/debezium-postgres/	io.debezium.transforms.tracing.ActivateTracingSpan	transformation	undefined
+]
+Read the documentation at https://kafka.apache.org/documentation.html#connect_plugindiscovery for instructions on migrating your plugins to take advantage of the performance improvements of service_load mode. To silence this warning, set plugin.discovery=only_scan in the worker config. (org.apache.kafka.connect.runtime.isolation.Plugins:122)
+[2025-04-17 14:16:55,970] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,970] INFO Added plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,970] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,970] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,970] INFO Added plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,970] INFO Added plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,970] INFO Added plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,970] INFO Added plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,970] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,970] INFO Added plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,970] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,970] INFO Added plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'io.debezium.connector.postgresql.transforms.timescaledb.TimescaleDb' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'io.debezium.transforms.ExtractNewRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'io.debezium.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'io.debezium.transforms.partitions.PartitionRouting' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'io.debezium.transforms.outbox.EventRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'io.confluent.connect.elasticsearch.ElasticsearchSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'io.debezium.connector.postgresql.rest.DebeziumPostgresConnectRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'io.debezium.transforms.HeaderToValue' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'io.debezium.transforms.SchemaChangeEventFilter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'io.debezium.transforms.ExtractSchemaToNewRecord' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'io.debezium.transforms.ByLogicalTableRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,971] INFO Added plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'io.debezium.transforms.TimezoneConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'io.debezium.transforms.ExtractChangedRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'io.debezium.transforms.tracing.ActivateTracingSpan' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'io.debezium.connector.postgresql.PostgresConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,972] INFO Added plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2025-04-17 14:16:55,973] INFO Added alias 'RecordIsTombstone' to plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'CloudEventsConverter' to plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'ElasticsearchSinkConnector' to plugin 'io.confluent.connect.elasticsearch.ElasticsearchSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'String' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'EnvVar' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'EnvVarConfigProvider' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'MirrorCheckpointConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'Boolean' to plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'HeaderToValue' to plugin 'io.debezium.transforms.HeaderToValue' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'PartitionRouting' to plugin 'io.debezium.transforms.partitions.PartitionRouting' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'Json' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'StringConverter' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'IntegerConverter' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'Float' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'LongConverter' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'DropHeaders' to plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'SimpleHeaderConverter' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'ExtractSchemaToNewRecord' to plugin 'io.debezium.transforms.ExtractSchemaToNewRecord' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'BinaryData' to plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'DirectoryConfigProvider' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'ShortConverter' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'CloudEvents' to plugin 'io.debezium.converters.CloudEventsConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'TimezoneConverter' to plugin 'io.debezium.transforms.TimezoneConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'BasicAuthSecurityRestExtension' to plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'Simple' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'DebeziumPostgres' to plugin 'io.debezium.connector.postgresql.rest.DebeziumPostgresConnectRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'AllConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'ExtractNewRecordState' to plugin 'io.debezium.transforms.ExtractNewRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'MirrorSource' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'Directory' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'MirrorHeartbeat' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'BooleanConverter' to plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'HasHeaderKey' to plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,973] INFO Added alias 'MirrorCheckpoint' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'ExtractChangedRecordState' to plugin 'io.debezium.transforms.ExtractChangedRecordState' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'None' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'TimestampRouter' to plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'Principal' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'All' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'JsonConverter' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'DebeziumPostgresConnectRestExtension' to plugin 'io.debezium.connector.postgresql.rest.DebeziumPostgresConnectRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'RegexRouter' to plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'Postgres' to plugin 'io.debezium.connector.postgresql.PostgresConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'NoneConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'Short' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'ByLogicalTableRouter' to plugin 'io.debezium.transforms.ByLogicalTableRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'Double' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'FileConfigProvider' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'EventRouter' to plugin 'io.debezium.transforms.outbox.EventRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'SchemaChangeEventFilter' to plugin 'io.debezium.transforms.SchemaChangeEventFilter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'Long' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'ElasticsearchSink' to plugin 'io.confluent.connect.elasticsearch.ElasticsearchSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'File' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'FloatConverter' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'ActivateTracingSpan' to plugin 'io.debezium.transforms.tracing.ActivateTracingSpan' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'DoubleConverter' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'BinaryDataConverter' to plugin 'io.debezium.converters.BinaryDataConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'TimescaleDb' to plugin 'io.debezium.connector.postgresql.transforms.timescaledb.TimescaleDb' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'TopicNameMatches' to plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'MirrorHeartbeatConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'InsertHeader' to plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'MirrorSourceConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'PrincipalConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'PostgresConnector' to plugin 'io.debezium.connector.postgresql.PostgresConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'ValueToKey' to plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'Integer' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,974] INFO Added alias 'Filter' to plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2025-04-17 14:16:55,978] INFO StandaloneConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	config.providers = []
+	connector.client.config.override.policy = All
+	header.converter = class org.apache.kafka.connect.storage.SimpleHeaderConverter
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	listeners = [http://:8083]
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	offset.flush.interval.ms = 10000
+	offset.flush.timeout.ms = 5000
+	offset.storage.file.filename = /tmp/connect.offsets
+	plugin.discovery = hybrid_warn
+	plugin.path = [/Users/kaleab.teka/Documents/kafka-new/plugins]
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	task.shutdown.graceful.timeout.ms = 5000
+	topic.creation.enable = true
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.standalone.StandaloneConfig:370)
+[2025-04-17 14:16:55,978] INFO Creating Kafka admin client (org.apache.kafka.connect.runtime.WorkerConfig:283)
+[2025-04-17 14:16:55,980] INFO AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:370)
+[2025-04-17 14:16:56,004] INFO These configurations '[offset.flush.interval.ms, rest.port, key.converter.schemas.enable, offset.storage.file.filename, value.converter.schemas.enable, plugin.path, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:379)
+[2025-04-17 14:16:56,004] INFO Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2025-04-17 14:16:56,004] INFO Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2025-04-17 14:16:56,004] INFO Kafka startTimeMs: 1744892216004 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2025-04-17 14:16:56,133] INFO Kafka cluster ID: 8MQNjomaTgynHyfy7nHH5w (org.apache.kafka.connect.runtime.WorkerConfig:300)
+[2025-04-17 14:16:56,133] INFO App info kafka.admin.client for adminclient-1 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2025-04-17 14:16:56,136] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2025-04-17 14:16:56,136] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2025-04-17 14:16:56,136] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2025-04-17 14:16:56,138] INFO PublicConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	listeners = [http://:8083]
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+ (org.apache.kafka.connect.runtime.rest.RestServerConfig$PublicConfig:370)
+[2025-04-17 14:16:56,142] INFO Logging initialized @1429ms to org.eclipse.jetty.util.log.Slf4jLog (org.eclipse.jetty.util.log:170)
+[2025-04-17 14:16:56,159] INFO Added connector for http://:8083 (org.apache.kafka.connect.runtime.rest.RestServer:111)
+[2025-04-17 14:16:56,159] INFO Initializing REST server (org.apache.kafka.connect.runtime.rest.RestServer:182)
+[2025-04-17 14:16:56,166] INFO jetty-9.4.53.v20231009; built: 2023-10-09T12:29:09.265Z; git: 27bde00a0b95a1d5bbee0eae7984f891d2d0f8c9; jvm 11.0.26+0 (org.eclipse.jetty.server.Server:375)
+[2025-04-17 14:16:56,175] INFO Started http_8083@392ef4ff{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:333)
+[2025-04-17 14:16:56,175] INFO Started @1462ms (org.eclipse.jetty.server.Server:415)
+[2025-04-17 14:16:56,182] INFO Advertised URI: http://172.20.10.10:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2025-04-17 14:16:56,182] INFO REST server listening at http://172.20.10.10:8083/, advertising URL http://172.20.10.10:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:202)
+[2025-04-17 14:16:56,182] INFO Advertised URI: http://172.20.10.10:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2025-04-17 14:16:56,183] INFO REST admin endpoints at http://172.20.10.10:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:205)
+[2025-04-17 14:16:56,183] INFO Advertised URI: http://172.20.10.10:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2025-04-17 14:16:56,183] INFO Setting up All Policy for ConnectorClientConfigOverride. This will allow all client configurations to be overridden (org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy:44)
+[2025-04-17 14:16:56,183] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2025-04-17 14:16:56,187] INFO Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2025-04-17 14:16:56,187] INFO Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2025-04-17 14:16:56,187] INFO Kafka startTimeMs: 1744892216187 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2025-04-17 14:16:56,189] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2025-04-17 14:16:56,189] INFO JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2025-04-17 14:16:56,192] INFO Kafka Connect worker initialization took 1282ms (org.apache.kafka.connect.cli.AbstractConnectCli:141)
+[2025-04-17 14:16:56,192] INFO Kafka Connect starting (org.apache.kafka.connect.runtime.Connect:51)
+[2025-04-17 14:16:56,192] INFO Herder starting (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:107)
+[2025-04-17 14:16:56,192] INFO Worker starting (org.apache.kafka.connect.runtime.Worker:231)
+[2025-04-17 14:16:56,192] INFO Starting FileOffsetBackingStore with file /tmp/connect.offsets (org.apache.kafka.connect.storage.FileOffsetBackingStore:63)
+[2025-04-17 14:16:56,211] INFO Worker started (org.apache.kafka.connect.runtime.Worker:241)
+[2025-04-17 14:16:56,211] INFO Herder started (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:110)
+[2025-04-17 14:16:56,211] INFO Initializing REST resources (org.apache.kafka.connect.runtime.rest.RestServer:209)
+[2025-04-17 14:16:56,223] INFO Adding admin resources to main listener (org.apache.kafka.connect.runtime.rest.RestServer:227)
+[2025-04-17 14:16:56,237] INFO DefaultSessionIdManager workerName=node0 (org.eclipse.jetty.server.session:334)
+[2025-04-17 14:16:56,237] INFO No SessionScavenger set, using defaults (org.eclipse.jetty.server.session:339)
+[2025-04-17 14:16:56,237] INFO node0 Scavenging every 600000ms (org.eclipse.jetty.server.session:132)
+[2025-04-17 14:16:56,382] INFO Started o.e.j.s.ServletContextHandler@67baa05{/,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler:921)
+[2025-04-17 14:16:56,382] INFO REST resources initialized; server is started and ready to handle requests (org.apache.kafka.connect.runtime.rest.RestServer:302)
+[2025-04-17 14:16:56,382] INFO Kafka Connect started (org.apache.kafka.connect.runtime.Connect:57)
+[2025-04-17 14:16:56,427] INFO Loading the custom source info struct maker plugin: io.debezium.connector.postgresql.PostgresSourceInfoStructMaker (io.debezium.config.CommonConnectorConfig:1318)
+[2025-04-17 14:16:56,481] INFO Successfully tested connection for jdbc:postgresql://localhost:5432/postgres with user 'postgres' (io.debezium.connector.postgresql.PostgresConnector:163)
+[2025-04-17 14:16:56,532] INFO Connection gracefully closed (io.debezium.jdbc.JdbcConnection:949)
+[2025-04-17 14:16:56,533] INFO AbstractConfig values: 
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2025-04-17 14:16:56,538] INFO [orders-connector|worker] Creating connector orders-connector of type io.debezium.connector.postgresql.PostgresConnector (org.apache.kafka.connect.runtime.Worker:309)
+[2025-04-17 14:16:56,538] INFO [orders-connector|worker] SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.postgresql.PostgresConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = orders-connector
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = [unwrap]
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:370)
+[2025-04-17 14:16:56,539] INFO [orders-connector|worker] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.postgresql.PostgresConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = orders-connector
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = [unwrap]
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = true
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field = 
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2025-04-17 14:16:56,541] INFO [orders-connector|worker] Instantiated connector orders-connector with version 2.5.0.Final of type class io.debezium.connector.postgresql.PostgresConnector (org.apache.kafka.connect.runtime.Worker:331)
+[2025-04-17 14:16:56,541] INFO [orders-connector|worker] Finished creating connector orders-connector (org.apache.kafka.connect.runtime.Worker:352)
+[2025-04-17 14:16:56,542] INFO SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.postgresql.PostgresConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = orders-connector
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = [unwrap]
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:370)
+[2025-04-17 14:16:56,542] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.postgresql.PostgresConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = orders-connector
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = [unwrap]
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = true
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field = 
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2025-04-17 14:16:56,544] INFO [orders-connector|task-0] Creating task orders-connector-0 (org.apache.kafka.connect.runtime.Worker:612)
+[2025-04-17 14:16:56,545] INFO [orders-connector|task-0] ConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.postgresql.PostgresConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = orders-connector
+	predicates = []
+	tasks.max = 1
+	transforms = [unwrap]
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig:370)
+[2025-04-17 14:16:56,545] INFO [orders-connector|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.postgresql.PostgresConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = orders-connector
+	predicates = []
+	tasks.max = 1
+	transforms = [unwrap]
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = true
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field = 
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2025-04-17 14:16:56,547] INFO [orders-connector|task-0] TaskConfig values: 
+	task.class = class io.debezium.connector.postgresql.PostgresConnectorTask
+ (org.apache.kafka.connect.runtime.TaskConfig:370)
+[2025-04-17 14:16:56,548] INFO [orders-connector|task-0] Instantiated task orders-connector-0 with version 2.5.0.Final of type io.debezium.connector.postgresql.PostgresConnectorTask (org.apache.kafka.connect.runtime.Worker:626)
+[2025-04-17 14:16:56,548] INFO [orders-connector|task-0] JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = true
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2025-04-17 14:16:56,548] INFO [orders-connector|task-0] Set up the key converter class org.apache.kafka.connect.json.JsonConverter for task orders-connector-0 using the worker config (org.apache.kafka.connect.runtime.Worker:639)
+[2025-04-17 14:16:56,548] INFO [orders-connector|task-0] JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = true
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2025-04-17 14:16:56,548] INFO [orders-connector|task-0] Set up the value converter class org.apache.kafka.connect.json.JsonConverter for task orders-connector-0 using the worker config (org.apache.kafka.connect.runtime.Worker:645)
+[2025-04-17 14:16:56,548] INFO [orders-connector|task-0] Set up the header converter class org.apache.kafka.connect.storage.SimpleHeaderConverter for task orders-connector-0 using the worker config (org.apache.kafka.connect.runtime.Worker:652)
+[2025-04-17 14:16:56,549] INFO [orders-connector|task-0] SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.postgresql.PostgresConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = orders-connector
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = [unwrap]
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:370)
+[2025-04-17 14:16:56,550] INFO [orders-connector|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.debezium.connector.postgresql.PostgresConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = orders-connector
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = [unwrap]
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = true
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field = 
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2025-04-17 14:16:56,551] WARN [orders-connector|task-0] The deleted record handling configs "drop.tombstones" and "delete.handling.mode" have been deprecated, please use "delete.tombstone.handling.mode" instead. (io.debezium.transforms.AbstractExtractNewRecordState:101)
+[2025-04-17 14:16:56,551] INFO [orders-connector|task-0] Initializing: org.apache.kafka.connect.runtime.TransformationChain{io.debezium.transforms.ExtractNewRecordState} (org.apache.kafka.connect.runtime.Worker:1842)
+[2025-04-17 14:16:56,553] INFO [orders-connector|task-0] ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = connector-producer-orders-connector-0
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 9223372036854775807
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+ (org.apache.kafka.clients.producer.ProducerConfig:370)
+[2025-04-17 14:16:56,561] INFO [orders-connector|task-0] initializing Kafka metrics collector (org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector:297)
+[2025-04-17 14:16:56,568] INFO [orders-connector|task-0] These configurations '[metrics.context.connect.kafka.cluster.id]' were supplied but are not used yet. (org.apache.kafka.clients.producer.ProducerConfig:379)
+[2025-04-17 14:16:56,569] INFO [orders-connector|task-0] Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2025-04-17 14:16:56,569] INFO [orders-connector|task-0] Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2025-04-17 14:16:56,569] INFO [orders-connector|task-0] Kafka startTimeMs: 1744892216569 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2025-04-17 14:16:56,573] INFO [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Cluster ID: 8MQNjomaTgynHyfy7nHH5w (org.apache.kafka.clients.Metadata:349)
+[2025-04-17 14:16:56,574] INFO Created connector orders-connector (org.apache.kafka.connect.cli.ConnectStandalone:87)
+[2025-04-17 14:16:56,574] INFO [orders-connector|task-0] Starting PostgresConnectorTask with configuration: (io.debezium.connector.common.BaseSourceTask:135)
+[2025-04-17 14:16:56,574] INFO [orders-connector|task-0]    connector.class = io.debezium.connector.postgresql.PostgresConnector (io.debezium.connector.common.BaseSourceTask:137)
+[2025-04-17 14:16:56,575] INFO [orders-connector|task-0]    database.user = postgres (io.debezium.connector.common.BaseSourceTask:137)
+[2025-04-17 14:16:56,575] INFO [orders-connector|task-0]    database.dbname = postgres (io.debezium.connector.common.BaseSourceTask:137)
+[2025-04-17 14:16:56,575] INFO [orders-connector|task-0]    slot.name = debezium_slot (io.debezium.connector.common.BaseSourceTask:137)
+[2025-04-17 14:16:56,575] INFO [orders-connector|task-0]    transforms = unwrap (io.debezium.connector.common.BaseSourceTask:137)
+[2025-04-17 14:16:56,575] INFO [orders-connector|task-0]    database.server.name = dbserver1 (io.debezium.connector.common.BaseSourceTask:137)
+[2025-04-17 14:16:56,575] INFO [orders-connector|task-0]    database.port = 5432 (io.debezium.connector.common.BaseSourceTask:137)
+[2025-04-17 14:16:56,575] INFO [orders-connector|task-0]    plugin.name = pgoutput (io.debezium.connector.common.BaseSourceTask:137)
+[2025-04-17 14:16:56,575] INFO [orders-connector|task-0]    topic.prefix = dbserver1 (io.debezium.connector.common.BaseSourceTask:137)
+[2025-04-17 14:16:56,575] INFO [orders-connector|task-0]    task.class = io.debezium.connector.postgresql.PostgresConnectorTask (io.debezium.connector.common.BaseSourceTask:137)
+[2025-04-17 14:16:56,575] INFO [orders-connector|task-0]    database.hostname = localhost (io.debezium.connector.common.BaseSourceTask:137)
+[2025-04-17 14:16:56,575] INFO [orders-connector|task-0]    database.password = ******** (io.debezium.connector.common.BaseSourceTask:137)
+[2025-04-17 14:16:56,575] INFO [orders-connector|task-0]    transforms.unwrap.drop.tombstones = true (io.debezium.connector.common.BaseSourceTask:137)
+[2025-04-17 14:16:56,575] INFO [orders-connector|task-0]    name = orders-connector (io.debezium.connector.common.BaseSourceTask:137)
+[2025-04-17 14:16:56,575] INFO [orders-connector|task-0]    transforms.unwrap.type = io.debezium.transforms.ExtractNewRecordState (io.debezium.connector.common.BaseSourceTask:137)
+[2025-04-17 14:16:56,575] INFO [orders-connector|task-0]    table.include.list = public.orders (io.debezium.connector.common.BaseSourceTask:137)
+[2025-04-17 14:16:56,575] INFO [orders-connector|task-0] Loading the custom source info struct maker plugin: io.debezium.connector.postgresql.PostgresSourceInfoStructMaker (io.debezium.config.CommonConnectorConfig:1318)
+[2025-04-17 14:16:56,575] INFO [orders-connector|task-0] Loading the custom topic naming strategy plugin: io.debezium.schema.SchemaTopicNamingStrategy (io.debezium.config.CommonConnectorConfig:1066)
+[2025-04-17 14:16:56,582] INFO [orders-connector|task-0] Connection gracefully closed (io.debezium.jdbc.JdbcConnection:949)
+[2025-04-17 14:16:56,669] INFO [orders-connector|task-0] Found previous partition offset PostgresPartition [sourcePartition={server=dbserver1}]: {transaction_id=null, lsn=24704224, txId=749, ts_usec=1744887545915026} (io.debezium.connector.common.BaseSourceTask:373)
+[2025-04-17 14:16:56,695] INFO [orders-connector|task-0] user 'postgres' connected to database 'postgres' on PostgreSQL 14.17 (Homebrew) on aarch64-apple-darwin24.2.0, compiled by Apple clang version 16.0.0 (clang-1600.0.26.6), 64-bit with roles:
+	role 'pg_read_all_settings' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_database_owner' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_stat_scan_tables' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_write_server_files' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'kaleab.teka' [superuser: true, replication: true, inherit: true, create role: true, create db: true, can log in: true]
+	role 'pg_read_all_data' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_write_all_data' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_monitor' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_read_server_files' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_execute_server_program' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_read_all_stats' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_signal_backend' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'postgres' [superuser: true, replication: true, inherit: true, create role: false, create db: false, can log in: true] (io.debezium.connector.postgresql.PostgresConnectorTask:134)
+[2025-04-17 14:16:56,712] INFO [orders-connector|task-0] Obtained valid replication slot ReplicationSlot [active=false, latestFlushedLsn=LSN{0/172E8D0}, catalogXmin=734] (io.debezium.connector.postgresql.connection.PostgresConnection:325)
+[2025-04-17 14:16:56,718] INFO [orders-connector|task-0] Found previous offset PostgresOffsetContext [sourceInfoSchema=Schema{io.debezium.connector.postgresql.Source:STRUCT}, sourceInfo=source_info[server='dbserver1'db='postgres', lsn=LSN{0/178F4E0}, txId=749, timestamp=2025-04-17T10:59:05.915026Z, snapshot=FALSE, schema=, table=], lastSnapshotRecord=true, lastCompletelyProcessedLsn=null, lastCommitLsn=null, streamingStoppingLsn=null, transactionContext=TransactionContext [currentTransactionId=null, perTableEventCount={}, totalEventCount=0], incrementalSnapshotContext=IncrementalSnapshotContext [windowOpened=false, chunkEndPosition=null, dataCollectionsToSnapshot=[], lastEventKeySent=null, maximumKey=null]] (io.debezium.connector.postgresql.PostgresConnectorTask:148)
+[2025-04-17 14:16:56,724] INFO [orders-connector|task-0] Requested thread factory for connector PostgresConnector, id = dbserver1 named = SignalProcessor (io.debezium.util.Threads:271)
+[2025-04-17 14:16:56,729] INFO [orders-connector|task-0] Requested thread factory for connector PostgresConnector, id = dbserver1 named = change-event-source-coordinator (io.debezium.util.Threads:271)
+[2025-04-17 14:16:56,729] INFO [orders-connector|task-0] Requested thread factory for connector PostgresConnector, id = dbserver1 named = blocking-snapshot (io.debezium.util.Threads:271)
+[2025-04-17 14:16:56,732] INFO [orders-connector|task-0] Creating thread debezium-postgresconnector-dbserver1-change-event-source-coordinator (io.debezium.util.Threads:288)
+[2025-04-17 14:16:56,733] INFO [orders-connector|task-0] Metrics registered (io.debezium.pipeline.ChangeEventSourceCoordinator:131)
+[2025-04-17 14:16:56,734] INFO [orders-connector|task-0] Context created (io.debezium.pipeline.ChangeEventSourceCoordinator:134)
+[2025-04-17 14:16:56,736] INFO [orders-connector|task-0] SignalProcessor started. Scheduling it every 5000ms (io.debezium.pipeline.signal.SignalProcessor:105)
+[2025-04-17 14:16:56,736] INFO [orders-connector|task-0] Creating thread debezium-postgresconnector-dbserver1-SignalProcessor (io.debezium.util.Threads:288)
+[2025-04-17 14:16:56,736] INFO [orders-connector|task-0] WorkerSourceTask{id=orders-connector-0} Source task finished initialization and start (org.apache.kafka.connect.runtime.AbstractWorkerSourceTask:281)
+[2025-04-17 14:16:56,737] INFO [orders-connector|task-0] Previous snapshot has completed successfully, streaming logical changes from last known position (io.debezium.connector.postgresql.snapshot.InitialSnapshotter:42)
+[2025-04-17 14:16:56,737] INFO [orders-connector|task-0] According to the connector configuration no snapshot will be executed (io.debezium.connector.postgresql.PostgresSnapshotChangeEventSource:76)
+[2025-04-17 14:16:56,738] INFO [orders-connector|task-0] Snapshot ended with SnapshotResult [status=SKIPPED, offset=PostgresOffsetContext [sourceInfoSchema=Schema{io.debezium.connector.postgresql.Source:STRUCT}, sourceInfo=source_info[server='dbserver1'db='postgres', lsn=LSN{0/178F4E0}, txId=749, timestamp=2025-04-17T10:59:05.915026Z, snapshot=FALSE, schema=, table=], lastSnapshotRecord=true, lastCompletelyProcessedLsn=null, lastCommitLsn=null, streamingStoppingLsn=null, transactionContext=TransactionContext [currentTransactionId=null, perTableEventCount={}, totalEventCount=0], incrementalSnapshotContext=IncrementalSnapshotContext [windowOpened=false, chunkEndPosition=null, dataCollectionsToSnapshot=[], lastEventKeySent=null, maximumKey=null]]] (io.debezium.pipeline.ChangeEventSourceCoordinator:254)
+[2025-04-17 14:16:56,739] INFO [orders-connector|task-0] Connected metrics set to 'true' (io.debezium.pipeline.ChangeEventSourceCoordinator:425)
+[2025-04-17 14:16:56,876] INFO [orders-connector|task-0] REPLICA IDENTITY for 'public.orders' is 'DEFAULT'; UPDATE and DELETE events will contain previous values only for PK columns (io.debezium.connector.postgresql.PostgresSchema:100)
+[2025-04-17 14:16:56,880] INFO [orders-connector|task-0] Starting streaming (io.debezium.pipeline.ChangeEventSourceCoordinator:271)
+[2025-04-17 14:16:56,880] INFO [orders-connector|task-0] Retrieved latest position from stored offset 'LSN{0/178F4E0}' (io.debezium.connector.postgresql.PostgresStreamingChangeEventSource:141)
+[2025-04-17 14:16:56,880] INFO [orders-connector|task-0] Looking for WAL restart position for last commit LSN 'null' and last change LSN 'LSN{0/178F4E0}' (io.debezium.connector.postgresql.connection.WalPositionLocator:48)
+[2025-04-17 14:16:56,880] INFO [orders-connector|task-0] Initializing PgOutput logical decoder publication (io.debezium.connector.postgresql.connection.PostgresReplicationConnection:150)
+[2025-04-17 14:16:56,912] INFO [orders-connector|task-0] Obtained valid replication slot ReplicationSlot [active=false, latestFlushedLsn=LSN{0/172E8D0}, catalogXmin=734] (io.debezium.connector.postgresql.connection.PostgresConnection:325)
+[2025-04-17 14:16:56,913] INFO [orders-connector|task-0] Connection gracefully closed (io.debezium.jdbc.JdbcConnection:949)
+[2025-04-17 14:16:56,940] INFO [orders-connector|task-0] Requested thread factory for connector PostgresConnector, id = dbserver1 named = keep-alive (io.debezium.util.Threads:271)
+[2025-04-17 14:16:56,940] INFO [orders-connector|task-0] Creating thread debezium-postgresconnector-dbserver1-keep-alive (io.debezium.util.Threads:288)
+[2025-04-17 14:16:56,965] INFO [orders-connector|task-0] REPLICA IDENTITY for 'public.orders' is 'DEFAULT'; UPDATE and DELETE events will contain previous values only for PK columns (io.debezium.connector.postgresql.PostgresSchema:100)
+[2025-04-17 14:16:56,966] INFO [orders-connector|task-0] Searching for WAL resume position (io.debezium.connector.postgresql.PostgresStreamingChangeEventSource:341)
+[2025-04-17 14:16:57,481] INFO [orders-connector|task-0] First LSN 'LSN{0/178F508}' received (io.debezium.connector.postgresql.connection.WalPositionLocator:71)
+[2025-04-17 14:16:57,482] INFO [orders-connector|task-0] WAL resume position 'LSN{0/178F508}' discovered (io.debezium.connector.postgresql.PostgresStreamingChangeEventSource:362)
+[2025-04-17 14:16:57,484] INFO [orders-connector|task-0] Connection gracefully closed (io.debezium.jdbc.JdbcConnection:949)
+[2025-04-17 14:16:57,486] INFO [orders-connector|task-0] Connection gracefully closed (io.debezium.jdbc.JdbcConnection:949)
+[2025-04-17 14:16:57,498] INFO [orders-connector|task-0] Initializing PgOutput logical decoder publication (io.debezium.connector.postgresql.connection.PostgresReplicationConnection:150)
+[2025-04-17 14:16:57,518] INFO [orders-connector|task-0] Requested thread factory for connector PostgresConnector, id = dbserver1 named = keep-alive (io.debezium.util.Threads:271)
+[2025-04-17 14:16:57,518] INFO [orders-connector|task-0] Creating thread debezium-postgresconnector-dbserver1-keep-alive (io.debezium.util.Threads:288)
+[2025-04-17 14:16:57,519] INFO [orders-connector|task-0] Processing messages (io.debezium.connector.postgresql.PostgresStreamingChangeEventSource:216)
+[2025-04-17 14:16:57,520] INFO [orders-connector|task-0] Message with LSN 'LSN{0/178F508}' arrived, switching off the filtering (io.debezium.connector.postgresql.connection.WalPositionLocator:152)
+[2025-04-17 14:17:13,889] INFO ElasticsearchSinkConnectorConfig values: 
+	batch.size = 2000
+	behavior.on.malformed.documents = ignore
+	behavior.on.null.values = FAIL
+	bulk.size.bytes = 5242880
+	compact.map.entries = true
+	connection.compression = false
+	connection.password = null
+	connection.timeout.ms = 1000
+	connection.url = [http://localhost:9200]
+	connection.username = null
+	data.stream.dataset = 
+	data.stream.namespace = ${topic}
+	data.stream.timestamp.field = []
+	data.stream.type = NONE
+	drop.invalid.message = true
+	elastic.https.ssl.cipher.suites = null
+	elastic.https.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	elastic.https.ssl.endpoint.identification.algorithm = https
+	elastic.https.ssl.engine.factory.class = null
+	elastic.https.ssl.key.password = null
+	elastic.https.ssl.keymanager.algorithm = SunX509
+	elastic.https.ssl.keystore.certificate.chain = null
+	elastic.https.ssl.keystore.key = null
+	elastic.https.ssl.keystore.location = null
+	elastic.https.ssl.keystore.password = null
+	elastic.https.ssl.keystore.type = JKS
+	elastic.https.ssl.protocol = TLSv1.3
+	elastic.https.ssl.provider = null
+	elastic.https.ssl.secure.random.implementation = null
+	elastic.https.ssl.trustmanager.algorithm = PKIX
+	elastic.https.ssl.truststore.certificates = null
+	elastic.https.ssl.truststore.location = null
+	elastic.https.ssl.truststore.password = null
+	elastic.https.ssl.truststore.type = JKS
+	elastic.security.protocol = PLAINTEXT
+	external.version.header = 
+	flush.synchronously = false
+	flush.timeout.ms = 180000
+	kerberos.keytab.path = null
+	kerberos.user.principal = null
+	key.ignore = true
+	linger.ms = 1
+	max.buffered.records = 20000
+	max.connection.idle.time.ms = 60000
+	max.in.flight.requests = 5
+	max.retries = 5
+	proxy.host = 
+	proxy.password = null
+	proxy.port = 8080
+	proxy.username = 
+	read.timeout.ms = 3000
+	retry.backoff.ms = 100
+	schema.ignore = true
+	topic.key.ignore = []
+	topic.schema.ignore = []
+	use.autogenerated.ids = false
+	write.method = INSERT
+ (io.confluent.connect.elasticsearch.ElasticsearchSinkConnectorConfig:370)
+[2025-04-17 14:17:14,096] INFO Using unsecured connection to [http://localhost:9200]. (io.confluent.connect.elasticsearch.ConfigCallbackHandler:115)
+[2025-04-17 14:17:14,169] ERROR Failed to create client to verify connection.  (io.confluent.connect.elasticsearch.Validator:120)
+ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused]; nested: ExecutionException[java.net.ConnectException: Connection refused]; nested: ConnectException[Connection refused];
+	at org.elasticsearch.client.RestHighLevelClient.performClientRequest(RestHighLevelClient.java:2695)
+	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:2171)
+	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:2154)
+	at org.elasticsearch.client.RestHighLevelClient.performRequestAndParseEntity(RestHighLevelClient.java:2118)
+	at org.elasticsearch.client.RestHighLevelClient.info(RestHighLevelClient.java:969)
+	at io.confluent.connect.elasticsearch.Validator.validateVersion(Validator.java:336)
+	at io.confluent.connect.elasticsearch.Validator.validate(Validator.java:116)
+	at io.confluent.connect.elasticsearch.ElasticsearchSinkConnector.validate(ElasticsearchSinkConnector.java:80)
+	at org.apache.kafka.connect.runtime.AbstractHerder.validateConnectorConfig(AbstractHerder.java:552)
+	at org.apache.kafka.connect.runtime.AbstractHerder.lambda$validateConnectorConfig$3(AbstractHerder.java:412)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.getValue(BaseFuture.java:257)
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.get(BaseFuture.java:244)
+	at org.elasticsearch.common.util.concurrent.BaseFuture.get(BaseFuture.java:75)
+	at org.elasticsearch.client.RestHighLevelClient.performClientRequest(RestHighLevelClient.java:2692)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	... 1 more
+[2025-04-17 14:17:14,170] INFO AbstractConfig values: 
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2025-04-17 14:17:14,184] INFO [0:0:0:0:0:0:0:1] - - [17/Apr/2025:12:17:13 +0000] "POST /connectors HTTP/1.1" 400 490 "-" "curl/8.7.1" 322 (org.apache.kafka.connect.runtime.rest.RestServer:62)
+[2025-04-17 14:25:56,588] INFO [orders-connector|task-0] [Producer clientId=connector-producer-orders-connector-0] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)

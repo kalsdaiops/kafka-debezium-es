@@ -1,0 +1,714 @@
+[2025-04-18 09:07:07,751] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:999)
+[2025-04-18 09:07:07,753] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483647 rack: null) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1012)
+[2025-04-18 09:07:07,753] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Client requested disconnect from node 2147483647 (org.apache.kafka.clients.NetworkClient:333)
+[2025-04-18 09:07:07,754] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:936)
+[2025-04-18 09:07:07,754] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: false. Rediscovery will be attempted. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:999)
+[2025-04-18 09:07:07,754] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483647 rack: null) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1012)
+[2025-04-18 09:07:07,852] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:936)
+[2025-04-18 09:22:25,092] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Disconnecting from node 0 due to request timeout. (org.apache.kafka.clients.NetworkClient:852)
+[2025-04-18 09:22:25,093] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Cancelled in-flight FETCH request with correlation id 7366 due to node 0 being disconnected (elapsed time since creation: 911694ms, elapsed time since send: 911694ms, request timeout: 30000ms) (org.apache.kafka.clients.NetworkClient:353)
+[2025-04-18 09:22:25,093] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Error sending fetch request (sessionId=248818613, epoch=320) to node 0: (org.apache.kafka.clients.FetchSessionHandler:615)
+org.apache.kafka.common.errors.DisconnectException
+[2025-04-18 09:22:25,093] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response. isDisconnected: false. Rediscovery will be attempted. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:999)
+[2025-04-18 09:22:25,093] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Requesting disconnect from last known coordinator localhost:9092 (id: 2147483647 rack: null) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1012)
+[2025-04-18 09:22:25,093] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Client requested disconnect from node 2147483647 (org.apache.kafka.clients.NetworkClient:333)
+[2025-04-18 09:22:25,210] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:936)
+[2025-04-18 09:25:21,441] INFO [orders-connector|task-0] 1 records sent during previous 16:18:55.821, last recorded offset of {server=dbserver1} partition is {transaction_id=null, lsn_proc=24754592, messageType=INSERT, lsn_commit=24751512, lsn=24754592, txId=766, ts_usec=1744961120970196} (io.debezium.connector.common.BaseSourceTask:213)
+[2025-04-18 09:25:30,715] INFO [orders-connector|task-0|offsets] WorkerSourceTask{id=orders-connector-0} Committing offsets for 1 acknowledged messages (org.apache.kafka.connect.runtime.WorkerSourceTask:233)
+[2025-04-18 09:26:32,941] INFO [0:0:0:0:0:0:0:1] - - [18/Apr/2025:07:26:32 +0000] "GET /connectors/orders-es-sink/status HTTP/1.1" 200 172 "-" "curl/8.7.1" 5 (org.apache.kafka.connect.runtime.rest.RestServer:62)
+[2025-04-18 09:29:32,159] INFO [0:0:0:0:0:0:0:1] - - [18/Apr/2025:07:29:32 +0000] "GET /connectors/orders-es-sink/config HTTP/1.1" 200 969 "-" "curl/8.7.1" 3 (org.apache.kafka.connect.runtime.rest.RestServer:62)
+[2025-04-18 09:34:10,872] INFO [orders-connector|task-0|offsets] WorkerSourceTask{id=orders-connector-0} Committing offsets for 1 acknowledged messages (org.apache.kafka.connect.runtime.WorkerSourceTask:233)
+[2025-04-18 09:35:25,138] INFO [0:0:0:0:0:0:0:1] - - [18/Apr/2025:07:35:25 +0000] "GET /connectors/dbserver1/status HTTP/1.1" 404 70 "-" "curl/8.7.1" 3 (org.apache.kafka.connect.runtime.rest.RestServer:62)
+[2025-04-18 09:46:34,273] INFO [0:0:0:0:0:0:0:1] - - [18/Apr/2025:07:46:34 +0000] "GET /connectors/dbserver1/status HTTP/1.1" 404 70 "-" "curl/8.7.1" 4 (org.apache.kafka.connect.runtime.rest.RestServer:62)
+[2025-04-18 09:54:41,818] ERROR Uncaught exception in REST call to /connectors/orders-es-sink/config (org.apache.kafka.connect.runtime.rest.errors.ConnectExceptionMapper:64)
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 41] (through reference chain: java.util.LinkedHashMap["config"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1767)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1541)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1446)
+	at com.fasterxml.jackson.databind.DeserializationContext.extractScalarFromObject(DeserializationContext.java:958)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._parseString(StdDeserializer.java:1424)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:48)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:11)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer._readAndBindStringKeyMap(MapDeserializer.java:623)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:449)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:32)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:2099)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1249)
+	at com.fasterxml.jackson.jaxrs.base.ProviderBase.readFrom(ProviderBase.java:801)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.invokeReadFrom(ReaderInterceptorExecutor.java:233)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.aroundReadFrom(ReaderInterceptorExecutor.java:212)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+	at org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundReadFrom(MappableExceptionWrapperInterceptor.java:49)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1072)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:919)
+	at org.glassfish.jersey.server.ContainerRequest.readEntity(ContainerRequest.java:290)
+	at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:73)
+	at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:56)
+	at org.glassfish.jersey.server.spi.internal.ParamValueFactoryWithSource.apply(ParamValueFactoryWithSource.java:50)
+	at org.glassfish.jersey.server.spi.internal.ParameterValueHelper.getParameterValues(ParameterValueHelper.java:68)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$AbstractMethodParamInvoker.getParamValues(JavaResourceMethodDispatcherProvider.java:109)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:81)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:478)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:400)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:256)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:235)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:684)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:358)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:554)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:181)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[2025-04-18 09:54:41,820] INFO [0:0:0:0:0:0:0:1] - - [18/Apr/2025:07:54:41 +0000] "PUT /connectors/orders-es-sink/config HTTP/1.1" 500 299 "-" "curl/8.7.1" 5 (org.apache.kafka.connect.runtime.rest.RestServer:62)
+[2025-04-18 09:55:38,662] INFO ElasticsearchSinkConnectorConfig values: 
+	batch.size = 2000
+	behavior.on.malformed.documents = ignore
+	behavior.on.null.values = FAIL
+	bulk.size.bytes = 5242880
+	compact.map.entries = true
+	connection.compression = false
+	connection.password = null
+	connection.timeout.ms = 1000
+	connection.url = [http://localhost:9200]
+	connection.username = null
+	data.stream.dataset = 
+	data.stream.namespace = ${topic}
+	data.stream.timestamp.field = []
+	data.stream.type = NONE
+	drop.invalid.message = true
+	elastic.https.ssl.cipher.suites = null
+	elastic.https.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	elastic.https.ssl.endpoint.identification.algorithm = https
+	elastic.https.ssl.engine.factory.class = null
+	elastic.https.ssl.key.password = null
+	elastic.https.ssl.keymanager.algorithm = SunX509
+	elastic.https.ssl.keystore.certificate.chain = null
+	elastic.https.ssl.keystore.key = null
+	elastic.https.ssl.keystore.location = null
+	elastic.https.ssl.keystore.password = null
+	elastic.https.ssl.keystore.type = JKS
+	elastic.https.ssl.protocol = TLSv1.3
+	elastic.https.ssl.provider = null
+	elastic.https.ssl.secure.random.implementation = null
+	elastic.https.ssl.trustmanager.algorithm = PKIX
+	elastic.https.ssl.truststore.certificates = null
+	elastic.https.ssl.truststore.location = null
+	elastic.https.ssl.truststore.password = null
+	elastic.https.ssl.truststore.type = JKS
+	elastic.security.protocol = PLAINTEXT
+	external.version.header = 
+	flush.synchronously = false
+	flush.timeout.ms = 180000
+	kerberos.keytab.path = null
+	kerberos.user.principal = null
+	key.ignore = false
+	linger.ms = 1
+	max.buffered.records = 20000
+	max.connection.idle.time.ms = 60000
+	max.in.flight.requests = 5
+	max.retries = 5
+	proxy.host = 
+	proxy.password = null
+	proxy.port = 8080
+	proxy.username = 
+	read.timeout.ms = 3000
+	retry.backoff.ms = 100
+	schema.ignore = true
+	topic.key.ignore = []
+	topic.schema.ignore = []
+	use.autogenerated.ids = false
+	write.method = INSERT
+ (io.confluent.connect.elasticsearch.ElasticsearchSinkConnectorConfig:370)
+[2025-04-18 09:55:38,664] INFO Using unsecured connection to [http://localhost:9200]. (io.confluent.connect.elasticsearch.ConfigCallbackHandler:115)
+[2025-04-18 09:55:38,676] INFO AbstractConfig values: 
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2025-04-18 09:55:38,676] INFO [orders-es-sink|worker] Stopping connector orders-es-sink (org.apache.kafka.connect.runtime.Worker:420)
+[2025-04-18 09:55:38,676] INFO [orders-es-sink|worker] Scheduled shutdown for WorkerConnector{id=orders-es-sink} (org.apache.kafka.connect.runtime.WorkerConnector:267)
+[2025-04-18 09:55:38,676] INFO [orders-es-sink|worker] Completed shutdown for WorkerConnector{id=orders-es-sink} (org.apache.kafka.connect.runtime.WorkerConnector:287)
+[2025-04-18 09:55:38,677] INFO [orders-es-sink|worker] Creating connector orders-es-sink of type io.confluent.connect.elasticsearch.ElasticsearchSinkConnector (org.apache.kafka.connect.runtime.Worker:309)
+[2025-04-18 09:55:38,677] INFO [orders-es-sink|worker] SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.elasticsearch.ElasticsearchSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	name = orders-es-sink
+	predicates = []
+	tasks.max = 1
+	topics = [dbserver1.public.orders]
+	topics.regex = 
+	transforms = [unwrap, renameAmount, formatTimestamp]
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:370)
+[2025-04-18 09:55:38,677] INFO [orders-es-sink|worker] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.elasticsearch.ElasticsearchSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	name = orders-es-sink
+	predicates = []
+	tasks.max = 1
+	topics = [dbserver1.public.orders]
+	topics.regex = 
+	transforms = [unwrap, renameAmount, formatTimestamp]
+	transforms.formatTimestamp.field = created_at
+	transforms.formatTimestamp.format = yyyy-MM-dd'T'HH:mm:ss'Z'
+	transforms.formatTimestamp.negate = false
+	transforms.formatTimestamp.predicate = null
+	transforms.formatTimestamp.target.type = string
+	transforms.formatTimestamp.type = class org.apache.kafka.connect.transforms.TimestampConverter$Value
+	transforms.formatTimestamp.unix.precision = milliseconds
+	transforms.renameAmount.blacklist = null
+	transforms.renameAmount.exclude = []
+	transforms.renameAmount.include = []
+	transforms.renameAmount.negate = false
+	transforms.renameAmount.predicate = null
+	transforms.renameAmount.renames = [amount:amount_decimal]
+	transforms.renameAmount.type = class org.apache.kafka.connect.transforms.ReplaceField$Value
+	transforms.renameAmount.whitelist = null
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = true
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field = 
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2025-04-18 09:55:38,678] INFO [orders-es-sink|worker] Instantiated connector orders-es-sink with version 14.1.2 of type class io.confluent.connect.elasticsearch.ElasticsearchSinkConnector (org.apache.kafka.connect.runtime.Worker:331)
+[2025-04-18 09:55:38,678] INFO [orders-es-sink|worker] Finished creating connector orders-es-sink (org.apache.kafka.connect.runtime.Worker:352)
+[2025-04-18 09:55:38,678] INFO [orders-es-sink|worker] ElasticsearchSinkConnectorConfig values: 
+	batch.size = 2000
+	behavior.on.malformed.documents = ignore
+	behavior.on.null.values = FAIL
+	bulk.size.bytes = 5242880
+	compact.map.entries = true
+	connection.compression = false
+	connection.password = null
+	connection.timeout.ms = 1000
+	connection.url = [http://localhost:9200]
+	connection.username = null
+	data.stream.dataset = 
+	data.stream.namespace = ${topic}
+	data.stream.timestamp.field = []
+	data.stream.type = NONE
+	drop.invalid.message = true
+	elastic.https.ssl.cipher.suites = null
+	elastic.https.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	elastic.https.ssl.endpoint.identification.algorithm = https
+	elastic.https.ssl.engine.factory.class = null
+	elastic.https.ssl.key.password = null
+	elastic.https.ssl.keymanager.algorithm = SunX509
+	elastic.https.ssl.keystore.certificate.chain = null
+	elastic.https.ssl.keystore.key = null
+	elastic.https.ssl.keystore.location = null
+	elastic.https.ssl.keystore.password = null
+	elastic.https.ssl.keystore.type = JKS
+	elastic.https.ssl.protocol = TLSv1.3
+	elastic.https.ssl.provider = null
+	elastic.https.ssl.secure.random.implementation = null
+	elastic.https.ssl.trustmanager.algorithm = PKIX
+	elastic.https.ssl.truststore.certificates = null
+	elastic.https.ssl.truststore.location = null
+	elastic.https.ssl.truststore.password = null
+	elastic.https.ssl.truststore.type = JKS
+	elastic.security.protocol = PLAINTEXT
+	external.version.header = 
+	flush.synchronously = false
+	flush.timeout.ms = 180000
+	kerberos.keytab.path = null
+	kerberos.user.principal = null
+	key.ignore = false
+	linger.ms = 1
+	max.buffered.records = 20000
+	max.connection.idle.time.ms = 60000
+	max.in.flight.requests = 5
+	max.retries = 5
+	proxy.host = 
+	proxy.password = null
+	proxy.port = 8080
+	proxy.username = 
+	read.timeout.ms = 3000
+	retry.backoff.ms = 100
+	schema.ignore = true
+	topic.key.ignore = []
+	topic.schema.ignore = []
+	use.autogenerated.ids = false
+	write.method = INSERT
+ (io.confluent.connect.elasticsearch.ElasticsearchSinkConnectorConfig:370)
+[2025-04-18 09:55:38,678] INFO SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.elasticsearch.ElasticsearchSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	name = orders-es-sink
+	predicates = []
+	tasks.max = 1
+	topics = [dbserver1.public.orders]
+	topics.regex = 
+	transforms = [unwrap, renameAmount, formatTimestamp]
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:370)
+[2025-04-18 09:55:38,678] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.elasticsearch.ElasticsearchSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	name = orders-es-sink
+	predicates = []
+	tasks.max = 1
+	topics = [dbserver1.public.orders]
+	topics.regex = 
+	transforms = [unwrap, renameAmount, formatTimestamp]
+	transforms.formatTimestamp.field = created_at
+	transforms.formatTimestamp.format = yyyy-MM-dd'T'HH:mm:ss'Z'
+	transforms.formatTimestamp.negate = false
+	transforms.formatTimestamp.predicate = null
+	transforms.formatTimestamp.target.type = string
+	transforms.formatTimestamp.type = class org.apache.kafka.connect.transforms.TimestampConverter$Value
+	transforms.formatTimestamp.unix.precision = milliseconds
+	transforms.renameAmount.blacklist = null
+	transforms.renameAmount.exclude = []
+	transforms.renameAmount.include = []
+	transforms.renameAmount.negate = false
+	transforms.renameAmount.predicate = null
+	transforms.renameAmount.renames = [amount:amount_decimal]
+	transforms.renameAmount.type = class org.apache.kafka.connect.transforms.ReplaceField$Value
+	transforms.renameAmount.whitelist = null
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = true
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field = 
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2025-04-18 09:55:38,679] INFO [orders-es-sink|task-0] Stopping task orders-es-sink-0 (org.apache.kafka.connect.runtime.Worker:1009)
+[2025-04-18 09:55:38,680] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Revoke previously assigned partitions dbserver1.public.orders-0 (org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker:78)
+[2025-04-18 09:55:38,680] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Member connector-consumer-orders-es-sink-0-7556dc14-da06-4343-b475-37a19962bdf2 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483647 rack: null) due to the consumer is being closed (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1163)
+[2025-04-18 09:55:38,680] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Resetting generation and member id due to: consumer pro-actively leaving the group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1055)
+[2025-04-18 09:55:38,680] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Request joining group due to: consumer pro-actively leaving the group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1102)
+[2025-04-18 09:55:38,710] INFO [orders-es-sink|task-0] Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2025-04-18 09:55:38,711] INFO [orders-es-sink|task-0] Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2025-04-18 09:55:38,711] INFO [orders-es-sink|task-0] Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2025-04-18 09:55:38,711] INFO [orders-es-sink|task-0] Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2025-04-18 09:55:38,712] INFO [orders-es-sink|task-0] App info kafka.consumer for connector-consumer-orders-es-sink-0 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2025-04-18 09:55:38,712] INFO [orders-es-sink|task-0] Creating task orders-es-sink-0 (org.apache.kafka.connect.runtime.Worker:612)
+[2025-04-18 09:55:38,712] INFO [orders-es-sink|task-0] ConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.elasticsearch.ElasticsearchSinkConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	name = orders-es-sink
+	predicates = []
+	tasks.max = 1
+	transforms = [unwrap, renameAmount, formatTimestamp]
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.ConnectorConfig:370)
+[2025-04-18 09:55:38,713] INFO [orders-es-sink|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.elasticsearch.ElasticsearchSinkConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	name = orders-es-sink
+	predicates = []
+	tasks.max = 1
+	transforms = [unwrap, renameAmount, formatTimestamp]
+	transforms.formatTimestamp.field = created_at
+	transforms.formatTimestamp.format = yyyy-MM-dd'T'HH:mm:ss'Z'
+	transforms.formatTimestamp.negate = false
+	transforms.formatTimestamp.predicate = null
+	transforms.formatTimestamp.target.type = string
+	transforms.formatTimestamp.type = class org.apache.kafka.connect.transforms.TimestampConverter$Value
+	transforms.formatTimestamp.unix.precision = milliseconds
+	transforms.renameAmount.blacklist = null
+	transforms.renameAmount.exclude = []
+	transforms.renameAmount.include = []
+	transforms.renameAmount.negate = false
+	transforms.renameAmount.predicate = null
+	transforms.renameAmount.renames = [amount:amount_decimal]
+	transforms.renameAmount.type = class org.apache.kafka.connect.transforms.ReplaceField$Value
+	transforms.renameAmount.whitelist = null
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = true
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field = 
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2025-04-18 09:55:38,713] INFO [orders-es-sink|task-0] TaskConfig values: 
+	task.class = class io.confluent.connect.elasticsearch.ElasticsearchSinkTask
+ (org.apache.kafka.connect.runtime.TaskConfig:370)
+[2025-04-18 09:55:38,713] INFO [orders-es-sink|task-0] Instantiated task orders-es-sink-0 with version 14.1.2 of type io.confluent.connect.elasticsearch.ElasticsearchSinkTask (org.apache.kafka.connect.runtime.Worker:626)
+[2025-04-18 09:55:38,713] INFO [orders-es-sink|task-0] JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2025-04-18 09:55:38,713] INFO [orders-es-sink|task-0] JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2025-04-18 09:55:38,713] INFO [orders-es-sink|task-0] Set up the key converter class org.apache.kafka.connect.json.JsonConverter for task orders-es-sink-0 using the connector config (org.apache.kafka.connect.runtime.Worker:641)
+[2025-04-18 09:55:38,713] INFO [orders-es-sink|task-0] Set up the value converter class org.apache.kafka.connect.json.JsonConverter for task orders-es-sink-0 using the connector config (org.apache.kafka.connect.runtime.Worker:647)
+[2025-04-18 09:55:38,713] INFO [orders-es-sink|task-0] Set up the header converter class org.apache.kafka.connect.storage.SimpleHeaderConverter for task orders-es-sink-0 using the worker config (org.apache.kafka.connect.runtime.Worker:652)
+[2025-04-18 09:55:38,713] WARN [orders-es-sink|task-0] The deleted record handling configs "drop.tombstones" and "delete.handling.mode" have been deprecated, please use "delete.tombstone.handling.mode" instead. (io.debezium.transforms.AbstractExtractNewRecordState:101)
+[2025-04-18 09:55:38,714] INFO [orders-es-sink|task-0] Initializing: org.apache.kafka.connect.runtime.TransformationChain{io.debezium.transforms.ExtractNewRecordState, org.apache.kafka.connect.transforms.ReplaceField$Value, org.apache.kafka.connect.transforms.TimestampConverter$Value} (org.apache.kafka.connect.runtime.Worker:1799)
+[2025-04-18 09:55:38,714] INFO [orders-es-sink|task-0] SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.elasticsearch.ElasticsearchSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	name = orders-es-sink
+	predicates = []
+	tasks.max = 1
+	topics = [dbserver1.public.orders]
+	topics.regex = 
+	transforms = [unwrap, renameAmount, formatTimestamp]
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:370)
+[2025-04-18 09:55:38,714] INFO [orders-es-sink|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.elasticsearch.ElasticsearchSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	name = orders-es-sink
+	predicates = []
+	tasks.max = 1
+	topics = [dbserver1.public.orders]
+	topics.regex = 
+	transforms = [unwrap, renameAmount, formatTimestamp]
+	transforms.formatTimestamp.field = created_at
+	transforms.formatTimestamp.format = yyyy-MM-dd'T'HH:mm:ss'Z'
+	transforms.formatTimestamp.negate = false
+	transforms.formatTimestamp.predicate = null
+	transforms.formatTimestamp.target.type = string
+	transforms.formatTimestamp.type = class org.apache.kafka.connect.transforms.TimestampConverter$Value
+	transforms.formatTimestamp.unix.precision = milliseconds
+	transforms.renameAmount.blacklist = null
+	transforms.renameAmount.exclude = []
+	transforms.renameAmount.include = []
+	transforms.renameAmount.negate = false
+	transforms.renameAmount.predicate = null
+	transforms.renameAmount.renames = [amount:amount_decimal]
+	transforms.renameAmount.type = class org.apache.kafka.connect.transforms.ReplaceField$Value
+	transforms.renameAmount.whitelist = null
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = true
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field = 
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2025-04-18 09:55:38,714] INFO [orders-es-sink|task-0] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = connector-consumer-orders-es-sink-0
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = connect-orders-es-sink
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+ (org.apache.kafka.clients.consumer.ConsumerConfig:370)
+[2025-04-18 09:55:38,715] INFO [orders-es-sink|task-0] initializing Kafka metrics collector (org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector:297)
+[2025-04-18 09:55:38,716] INFO [orders-es-sink|task-0] These configurations '[metrics.context.connect.kafka.cluster.id]' were supplied but are not used yet. (org.apache.kafka.clients.consumer.ConsumerConfig:379)
+[2025-04-18 09:55:38,716] INFO [orders-es-sink|task-0] Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2025-04-18 09:55:38,716] INFO [orders-es-sink|task-0] Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2025-04-18 09:55:38,716] INFO [orders-es-sink|task-0] Kafka startTimeMs: 1744962938716 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2025-04-18 09:55:38,716] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Subscribed to topic(s): dbserver1.public.orders (org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer:475)
+[2025-04-18 09:55:38,717] INFO [orders-es-sink|task-0] Starting ElasticsearchSinkTask. (io.confluent.connect.elasticsearch.ElasticsearchSinkTask:59)
+[2025-04-18 09:55:38,717] INFO [orders-es-sink|task-0] ElasticsearchSinkConnectorConfig values: 
+	batch.size = 2000
+	behavior.on.malformed.documents = ignore
+	behavior.on.null.values = FAIL
+	bulk.size.bytes = 5242880
+	compact.map.entries = true
+	connection.compression = false
+	connection.password = null
+	connection.timeout.ms = 1000
+	connection.url = [http://localhost:9200]
+	connection.username = null
+	data.stream.dataset = 
+	data.stream.namespace = ${topic}
+	data.stream.timestamp.field = []
+	data.stream.type = NONE
+	drop.invalid.message = true
+	elastic.https.ssl.cipher.suites = null
+	elastic.https.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	elastic.https.ssl.endpoint.identification.algorithm = https
+	elastic.https.ssl.engine.factory.class = null
+	elastic.https.ssl.key.password = null
+	elastic.https.ssl.keymanager.algorithm = SunX509
+	elastic.https.ssl.keystore.certificate.chain = null
+	elastic.https.ssl.keystore.key = null
+	elastic.https.ssl.keystore.location = null
+	elastic.https.ssl.keystore.password = null
+	elastic.https.ssl.keystore.type = JKS
+	elastic.https.ssl.protocol = TLSv1.3
+	elastic.https.ssl.provider = null
+	elastic.https.ssl.secure.random.implementation = null
+	elastic.https.ssl.trustmanager.algorithm = PKIX
+	elastic.https.ssl.truststore.certificates = null
+	elastic.https.ssl.truststore.location = null
+	elastic.https.ssl.truststore.password = null
+	elastic.https.ssl.truststore.type = JKS
+	elastic.security.protocol = PLAINTEXT
+	external.version.header = 
+	flush.synchronously = false
+	flush.timeout.ms = 180000
+	kerberos.keytab.path = null
+	kerberos.user.principal = null
+	key.ignore = false
+	linger.ms = 1
+	max.buffered.records = 20000
+	max.connection.idle.time.ms = 60000
+	max.in.flight.requests = 5
+	max.retries = 5
+	proxy.host = 
+	proxy.password = null
+	proxy.port = 8080
+	proxy.username = 
+	read.timeout.ms = 3000
+	retry.backoff.ms = 100
+	schema.ignore = true
+	topic.key.ignore = []
+	topic.schema.ignore = []
+	use.autogenerated.ids = false
+	write.method = INSERT
+ (io.confluent.connect.elasticsearch.ElasticsearchSinkConnectorConfig:370)
+[2025-04-18 09:55:38,717] INFO [orders-es-sink|task-0] Errant record reporter not configured. (io.confluent.connect.elasticsearch.ElasticsearchSinkTask:73)
+[2025-04-18 09:55:38,717] INFO [0:0:0:0:0:0:0:1] - - [18/Apr/2025:07:55:38 +0000] "PUT /connectors/orders-es-sink/config HTTP/1.1" 200 1191 "-" "curl/8.7.1" 61 (org.apache.kafka.connect.runtime.rest.RestServer:62)
+[2025-04-18 09:55:38,718] INFO [orders-es-sink|task-0] Using unsecured connection to [http://localhost:9200]. (io.confluent.connect.elasticsearch.ConfigCallbackHandler:115)
+[2025-04-18 09:55:38,721] INFO [orders-es-sink|task-0] Staring client in ES 8 compatibility mode (io.confluent.connect.elasticsearch.ElasticsearchClient:151)
+[2025-04-18 09:55:38,722] INFO [orders-es-sink|task-0] Started ElasticsearchSinkTask. Connecting to ES server version: 8.11.3 (io.confluent.connect.elasticsearch.ElasticsearchSinkTask:91)
+[2025-04-18 09:55:38,722] INFO [orders-es-sink|task-0] WorkerSinkTask{id=orders-es-sink-0} Sink task finished initialization and start (org.apache.kafka.connect.runtime.WorkerSinkTask:330)
+[2025-04-18 09:55:38,722] INFO [orders-es-sink|task-0] WorkerSinkTask{id=orders-es-sink-0} Executing sink task (org.apache.kafka.connect.runtime.WorkerSinkTask:214)
+[2025-04-18 09:55:38,723] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Cluster ID: 8MQNjomaTgynHyfy7nHH5w (org.apache.kafka.clients.Metadata:349)
+[2025-04-18 09:55:38,724] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:936)
+[2025-04-18 09:55:38,724] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] (Re-)joining group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:604)
+[2025-04-18 09:55:38,725] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Request joining group due to: need to re-join with the given member-id: connector-consumer-orders-es-sink-0-13b58da5-c153-4fd1-89e0-56aa02146d09 (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1102)
+[2025-04-18 09:55:38,725] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] (Re-)joining group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:604)
+[2025-04-18 09:55:38,726] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Successfully joined group with generation Generation{generationId=5, memberId='connector-consumer-orders-es-sink-0-13b58da5-c153-4fd1-89e0-56aa02146d09', protocol='range'} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:665)
+[2025-04-18 09:55:38,727] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Finished assignment for group at generation 5: {connector-consumer-orders-es-sink-0-13b58da5-c153-4fd1-89e0-56aa02146d09=Assignment(partitions=[dbserver1.public.orders-0])} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:659)
+[2025-04-18 09:55:38,728] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Successfully synced group in generation Generation{generationId=5, memberId='connector-consumer-orders-es-sink-0-13b58da5-c153-4fd1-89e0-56aa02146d09', protocol='range'} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:842)
+[2025-04-18 09:55:38,728] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Notifying assignor about the new Assignment(partitions=[dbserver1.public.orders-0]) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:319)
+[2025-04-18 09:55:38,728] INFO [orders-es-sink|task-0] [Consumer clientId=connector-consumer-orders-es-sink-0, groupId=connect-orders-es-sink] Adding newly assigned partitions: dbserver1.public.orders-0 (org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker:56)
+[2025-04-18 09:55:38,728] INFO [orders-es-sink|task-0] Setting offset for partition dbserver1.public.orders-0 to the committed offset FetchPosition{offset=18, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 0 rack: null)], epoch=0}} (org.apache.kafka.clients.consumer.internals.ConsumerUtils:199)
+[2025-04-18 09:57:40,921] INFO [0:0:0:0:0:0:0:1] - - [18/Apr/2025:07:57:40 +0000] "GET /connectors/orders-es-sink/status HTTP/1.1" 200 172 "-" "curl/8.7.1" 3 (org.apache.kafka.connect.runtime.rest.RestServer:62)
+[2025-04-18 09:58:12,770] INFO [0:0:0:0:0:0:0:1] - - [18/Apr/2025:07:58:12 +0000] "GET /connectors/orders-es-sink/status HTTP/1.1" 200 172 "-" "curl/8.7.1" 2 (org.apache.kafka.connect.runtime.rest.RestServer:62)
