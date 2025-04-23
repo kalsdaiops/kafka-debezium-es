@@ -5,4 +5,4 @@ __pycache__/
 *.tgz
 *.tar.gz
 .DS_Store
-
+plugins/debezium-connector-postgres-2.5.0.Final-plugin.tar.gz	plugins/elasticsearch-8.11.3-darwin-x86_64.tar.gz
