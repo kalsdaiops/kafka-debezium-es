@@ -1008,3 +1008,5 @@
 [2025-04-23T08:01:11.500+0000][17261][info ][safepoint   ] Safepoint "Cleanup", Time since last: 191358582542 ns, Reaching safepoint: 45458 ns, Cleanup: 14667 ns, At safepoint: 1125 ns, Total: 61250 ns
 [2025-04-23T08:01:33.602+0000][17261][info ][safepoint   ] Safepoint "Cleanup", Time since last: 22103166875 ns, Reaching safepoint: 8166 ns, Cleanup: 9209 ns, At safepoint: 1000 ns, Total: 18375 ns
 [2025-04-23T08:11:05.293+0000][17261][info ][safepoint   ] Safepoint "Cleanup", Time since last: 569391651458 ns, Reaching safepoint: 68667 ns, Cleanup: 53041 ns, At safepoint: 5334 ns, Total: 127042 ns
+[2025-04-23T09:07:30.121+0000][17261][info ][safepoint   ] Safepoint "Cleanup", Time since last: 3384841452875 ns, Reaching safepoint: 82500 ns, Cleanup: 434833 ns, At safepoint: 15333 ns, Total: 532666 ns
+[2025-04-23T09:54:24.294+0000][17261][info ][safepoint   ] Safepoint "Cleanup", Time since last: 2638441361084 ns, Reaching safepoint: 136375 ns, Cleanup: 793208 ns, At safepoint: 10125 ns, Total: 939708 ns

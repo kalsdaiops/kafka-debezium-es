@@ -7,5 +7,7 @@ __pycache__/
 .DS_Store
 # Ignore large binaries
 *.dylib
+kafka_2.13-3.7.0/libs/
 plugins/elasticsearch-*/jdk.app/
+plugins/
 plugins/debezium-connector-postgres-2.5.0.Final-plugin.tar.gz	plugins/elasticsearch-8.11.3-darwin-x86_64.tar.gz
