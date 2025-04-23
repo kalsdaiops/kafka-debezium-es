@@ -1,13 +1,27 @@
+# Python
 venv/
 *.pyc
 __pycache__/
+
+# Logs and system files
 *.log
+.DS_Store
+
+# Archives
 *.tgz
 *.tar.gz
-.DS_Store
+
 # Ignore large binaries
 *.dylib
+
+# Kafka and plugin directories
 kafka_2.13-3.7.0/libs/
-plugins/elasticsearch-*/jdk.app/
 plugins/
-plugins/debezium-connector-postgres-2.5.0.Final-plugin.tar.gz	plugins/elasticsearch-8.11.3-darwin-x86_64.tar.gz
+plugins/elasticsearch-*/jdk.app/
+plugins/elasticsearch-8.11.3/
+plugins/debezium-connector-postgres-2.5.0.Final-plugin.tar.gz
+plugins/elasticsearch-8.11.3-darwin-x86_64.tar.gz
+
+# Remove any temp/backup artifacts
+*~
+
