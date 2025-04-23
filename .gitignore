@@ -21,7 +21,7 @@ plugins/elasticsearch-*/jdk.app/
 plugins/elasticsearch-8.11.3/
 plugins/debezium-connector-postgres-2.5.0.Final-plugin.tar.gz
 plugins/elasticsearch-8.11.3-darwin-x86_64.tar.gz
-
+kafka_2.13-3.7.0/libs
 # Remove any temp/backup artifacts
 *~
 
