@@ -24,6 +24,18 @@ plugins/debezium-connector-postgres-2.5.0.Final-plugin.tar.gz
 plugins/elasticsearch-8.11.3-darwin-x86_64.tar.gz
 kafka_2.13-3.7.0/libs/*
 plugins/elasticsearch-8.11.3/modules/x-pack-ml/platform/darwin-x86_64/controller.app/Contents/lib/libtorch_cpu.dylib
+# Packages #
+############
+# it’s better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
 # Remove any temp/backup artifacts
 *~
 
